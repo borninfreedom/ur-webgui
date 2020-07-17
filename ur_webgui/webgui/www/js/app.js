@@ -68,7 +68,7 @@ var app = new Vue({
     /** Define the default hostname. */
     created() {
         this.address = 'ws://' + location.hostname + ':9090';
-        $.getJSON('/ur5_webgui/data/auth.json', (data) => {
+        $.getJSON('/ur_webgui/data/auth.json', (data) => {
             this.users = data;
         });
     }
